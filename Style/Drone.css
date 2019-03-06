@@ -1,0 +1,268 @@
+	html
+	{
+		font-size:16px;
+		height:100%;
+	}
+	*
+	{
+		margin:0px;
+		padding:0px;
+		text-indent:0px;
+	}
+	body
+	{
+		background-color:#C1CAB5;
+		height:100%;
+		font-family:Times;
+	}
+	#calc
+	{
+		width:100%;
+		position:fixed;
+		background:radial-gradient(#F5D6BA,#24211E);
+	}
+	#buton
+	{
+		display:none;
+		width:4vw;
+		height: 4vh;
+		position: absolute;
+		top:-0.1%;
+		left:0.4%;
+		cursor: pointer;
+		opacity:0;
+		z-index:2;
+	}
+	div.burger
+	{
+		display:none;
+		width:3.5vw;
+		height:0.5vw;
+		background-color:black;
+		margin:0.5%;
+		z-index:1;
+	}
+	#Titlu
+	{
+		font-size:1.2rem;
+		padding:5%;
+		text-align:center;
+	}
+	#Titlu span
+	{	
+		border-bottom:2px solid black;
+	}
+	ul.menu
+	{
+		margin-left:10%;
+		margin-right:10%;
+	}
+	ul.menu li
+	{
+		display:block;
+		font-size:1.2rem;
+		font-weight:bold;
+		height:2.7rem;
+		text-align:center;
+		line-height:2.5rem;
+		list-style-type:none;
+		overflow:hidden;
+		float:left;
+		width:25%;
+	}
+	ul.submenu li
+	{
+		background:radial-gradient(#F5D6BA,#24211E);
+		display:block;
+		width:50%;
+		margin-left:25%;
+		border-top:2px solid black;
+		box-sizing:border-box;
+	}
+	ul.submenu
+	{
+		position:relative;
+	}
+	ul.menu a
+	{
+		height:	100%;
+		text-decoration:none;
+		display:block;
+		color:black;
+	}
+	ul.submenu li:last-child
+	{
+		border-bottom:2px solid black;
+	}
+	ul.menu li:hover
+	{
+		overflow:visible;
+		background:radial-gradient(#404E7C,#2C2C54);
+	}
+	ul.submenu li:hover
+	{
+		background:linear-gradient(to right,#052337,#FEFEFE,#052337);
+	}
+	#buton:checked+#tel
+	{
+		display:inline;
+	}
+	#tel
+	{
+		display:none;
+		text-align:center;
+		height:6rem;
+	}
+	#tel #meniuTel
+	{
+		font-size:0.9rem;
+		font-weight:bold;
+		text-align:center;
+		list-style-type:none;
+		line-height:1.5rem;
+		box-sizing:border-box;
+	}
+	#meniuTel li
+	{
+		background:radial-gradient(#4D900B,#24211E);
+		border-bottom:1px solid #EAEAEA;
+		transition: all .25s ease;
+	}
+	#meniuTel a
+	{
+		display:block;
+		text-decoration:none;
+		color:black;
+	}
+	#meniuTel ul.submenuTel
+	{
+		display:none;
+		width:50%;
+		list-style-type:none;
+	}
+	#meniuTel ul.submenuTel li
+	{
+		border-bottom:none;
+	}
+	#meniuTel li:hover
+	{
+		background:#D0F1BF;
+	}
+	#meniuTel #celCuSubmenu:hover ul.submenuTel
+	{
+		display:inline-block;
+	}
+	#meniuTel ul.submenuTel li:hover
+	{
+		background:#2BA84A;
+	}
+	footer
+	{
+		display:flex;
+		position:fixed;
+		left:0%;
+		background:#3A445D;
+		bottom:0%;
+		color:white;
+		width:100%;
+		justify-content:space-between;
+	}
+	footer a
+	{
+		color:white;
+		text-Decoration:none;
+	}
+	.Shop
+	{
+		height:50%;
+		display:flex;
+		justify-content:space-around;
+		box-sizing:border-box;
+		margin-bottom:5%;
+	}
+	.Shop .Tab
+	{
+		text-align:center;
+		width:40%;
+		border:2px solid black;
+		margin-left:9.5%;
+	}
+	.Shop .Tab + .Tab
+	{
+		margin-left: 0%;
+		margin-right:9.5%;
+	}
+	.Shop .Space
+	{
+		margin-bottom:13%;
+	}
+	.Shop .Descriere~p
+	{
+		text-align:left;
+	}
+	.Shop img
+	{
+		width:100%;
+		height:50%;
+	}
+	@media screen and (min-width:850px) and (max-width:950px)
+	{
+		ul.menu li
+		{
+			font-size:1rem;
+			height:4vw;
+		}
+		#Titlu
+		{
+			padding:6%;
+			font-size:1rem;
+		}
+	}
+	@media screen and (min-width:800px) and (max-width:850px)
+	{
+		ul.menu li
+		{
+			font-size:0.9rem;
+			height:4.2vw;
+		}
+		#Titlu
+		{
+			font-size:1rem;
+		}
+	}
+	@media screen and (max-width:800px)
+	{
+		ul.menu li
+		{
+			font-size:0.8rem;
+			height:4.5vw;
+		}
+		#Titlu
+		{
+			font-size:1rem;
+		}
+
+	}
+	@media screen and (max-width:700px)
+	{
+		ul.menu li
+		{
+			font-size:0.8rem;
+			height:4.5vw;
+		}
+	}
+	@media screen and (max-width:650px)
+	{
+		#buton
+		{
+			display: block;
+		}
+		ul.menu
+		{
+			display:none;
+		}
+		div.burger
+		{
+			display:block;
+		}
+	}
